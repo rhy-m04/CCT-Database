@@ -1,0 +1,16 @@
+name = "las-command-portal"
+compatibility_date = "2024-11-01"
+pages_build_output_dir = "."
+
+# Created with: wrangler d1 create las-portal-db
+# Then paste the database_id it prints below.
+[[d1_databases]]
+binding = "DB"
+database_name = "las-portal-db"
+database_id = "REPLACE_WITH_YOUR_D1_DATABASE_ID"
+
+# Created with: wrangler kv namespace create SESSIONS
+# Then paste the id it prints below.
+[[kv_namespaces]]
+binding = "SESSIONS"
+id = "REPLACE_WITH_YOUR_KV_NAMESPACE_ID"
